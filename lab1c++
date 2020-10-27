@@ -1,0 +1,21 @@
+#include <math.h>
+#include <conio.h>
+#include <stdio.h>
+#include <locale.h>
+#include <iostream>
+using namespace std;
+
+ int main() {
+	double n1, n2, n3;
+	cout << "enter a positive number: ";
+	cin >> n1;
+	cout << "enter a positive number: ";
+	cin >> n2;
+	cout << "enter a positive number: ";
+	cin >> n3;
+	double geom_mean = pow(n1 * n2 * n3, (double)1/3);     // finding a geometric mean of the entered numbers
+	double fractional_part = geom_mean - (int)geom_mean;   // finding a fractional part of the geometric mean
+	cout << "fractional part: "<< fractional_part;
+		return 0;
+}
+ 
